@@ -58,6 +58,10 @@ h3 {
   color: var(--text);
 }
 
+b{
+
+  color: #ce5368;
+}
 blockquote {
   border-left: 4px solid var(--accent);
   padding-left: 1rem;
@@ -87,9 +91,33 @@ section {
 }
 
 
+.phase {
+  color: #ad394c;
+}
 
+.evolution  {
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  color: #ce5368;
+  margin-bottom: 60rem;
+}
 
+.phase-eight-bands {
+  color: #d14154;
 
+}
+
+.phase-eight-li {
+  margin-block: 1rem;
+}
+
+.bm {
+  color: #000;
+  background-color: #e5e7eb;
+ 
+}
 
 
 
