@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import "./metal-essay.css";
@@ -218,39 +218,22 @@ const albumImages = [
 // }
 
 function getSweepPath() {
-  const side = Math.floor(Math.random() * 4);
   const vw = window.innerWidth;
   const vh = window.innerHeight;
 
-  let start, end;
-
-  switch (side) {
-    case 0: // left → right
-      start = { top: `${Math.random() * vh}px`, left: `-200px` };
-      end = { top: `${Math.random() * vh}px`, left: `${vw + 200}px` };
-      break;
-    case 1: // right → left
-      start = { top: `${Math.random() * vh}px`, left: `${vw + 200}px` };
-      end = { top: `${Math.random() * vh}px`, left: `-200px` };
-      break;
-    case 2: // top → bottom
-      start = { top: `-200px`, left: `${Math.random() * vw}px` };
-      end = { top: `${vh + 200}px`, left: `${Math.random() * vw}px` };
-      break;
-    case 3: // bottom → top
-      start = { top: `${vh + 200}px`, left: `${Math.random() * vw}px` };
-      end = { top: `-200px`, left: `${Math.random() * vw}px` };
-      break;
-    default:
-      start = end = { top: `50%`, left: `50%` };
-  }
+  const verticalOffset = Math.random() * vh * 0.8 + vh * 0.1; // keep within center-ish range
+  const start = { top: `${verticalOffset}px`, left: `${vw + 200}px` };
+  const end = { top: `${verticalOffset}px`, left: `-200px` };
 
   return {
     startCSS: start,
     x: `${parseFloat(end.left) - parseFloat(start.left)}px`,
-    y: `${parseFloat(end.top) - parseFloat(start.top)}px`,
+    y: "0px",
   };
 }
+
+
+
 
 // function getRandomPositionPair() {
 //   const vw = window.innerWidth;
@@ -285,12 +268,10 @@ function getRandomSize() {
   return "200px";
 }
 function getRandomDuration() {
-  const min = 12;
-  const max = 20;
-  return `${Math.random() * (max - min) + min}s`;
+  return "25s";
 }
 function getRandomDelay() {
-  return `${Math.random() * 30}s`;
+  return `${Math.random() * 20}s`;
 }
 function shuffle(array) {
   return array
@@ -303,14 +284,16 @@ let shuffledAlbums = shuffle(albumImages);
 let currentIndex = 0;
 function AlbumBackground() {
   const [floatingAlbums, setFloatingAlbums] = useState([]);
-
+  const activeCountRef = useRef(0); // 🔧 Add this
   useEffect(() => {
-    const visibleCount = 10;
-    let index = 0;
+    const visibleCount = 20;
+
 
     function spawnAlbum() {
+      if (activeCountRef.current >= visibleCount) return;
       const src = shuffledAlbums[currentIndex];
       currentIndex = (currentIndex + 1) % shuffledAlbums.length;
+
       // Reshuffle if we've looped through everything
       if (currentIndex === 0) {
         shuffledAlbums = shuffle(albumImages);
@@ -325,7 +308,7 @@ function AlbumBackground() {
         pos, // contains startCSS, x, y
 
         size: getRandomSize(),
-        duration: duration,
+        duration: "25s",
         delay: delay,
         tilt: getRandomTilt(),
       };
@@ -333,18 +316,23 @@ function AlbumBackground() {
       setFloatingAlbums((prev) => {
         const next = [...prev, newAlbum];
         // Keep only the last 10
-        return next.length > 10 ? next.slice(next.length - 10) : next;
+        activeCountRef.current++; // count new album
+        return [...prev, newAlbum];
       });
 
       const totalLifetime = parseFloat(duration) * 1000 + parseFloat(delay) * 1000;
       setTimeout(() => {
-        setFloatingAlbums((prev) => prev.filter((a) => a.id !== newAlbum.id));
+        setFloatingAlbums((prev) => {
+          activeCountRef.current--;
+
+          return prev.filter((a) => a.id !== newAlbum.id);
+        });
+
       }, totalLifetime);
 
-      index++;
     }
 
-    const interval = setInterval(spawnAlbum, 7000); // spawn every 7s
+    const interval = setInterval(spawnAlbum, 3000); // spawn every 3s
     return () => clearInterval(interval);
   }, []);
   return (

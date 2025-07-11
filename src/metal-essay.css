@@ -153,9 +153,9 @@ position: absolute;
   z-index: 0;
   pointer-events: none;
   animation-name: drift;
-  opacity: 0.6;
+  opacity: 0.3;
   
-transition: opacity 2s ease-in-out;
+transition: opacity 1s ease-in-out;
   animation-name: drift;
   animation-timing-function: linear;
   animation-iteration-count: 1;
@@ -175,16 +175,13 @@ transition: opacity 2s ease-in-out;
     transform: translate(0, 0) scale(0.9) rotate(0deg);
   }
   10% {
-    opacity: 0.4;
+    opacity: 0.3;
   }
   50% {
-    opacity: 0.6;
+    opacity: 0.2;
     transform: translate(calc(var(--x) * 0.5), calc(var(--y) * 0.5)) scale(1) rotate(4deg);
   }
-  70% {
-    opacity: 0.5;
-    transform: translate(calc(var(--x) * 0.5), calc(var(--y) * 0.5)) scale(1) rotate(1deg);
-  }
+ 
   90% {
     opacity: 0.3;
     transform: translate(calc(var(--x) * 0.9), calc(var(--y) * 0.9)) scale(1) rotate(-3deg);
