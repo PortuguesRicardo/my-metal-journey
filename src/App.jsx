@@ -5,201 +5,201 @@ import "./metal-essay.css";
 
 
 const albumImages = [
-  "/public/albums/5fdp.png",
-  "/public/albums/A7x.png",
-  "/public/albums/Aephanemer.png",
-  "/public/albums/Aethernan.png",
-  "/public/albums/AetherRealm.png",
-  "/public/albums/After-Forever.png",
-  "/public/albums/Agalloch.png",
-  "/public/albums/Alestorm.png",
-  "/public/albums/AlienWeaponry.png",
-  "/public/albums/Allamedah.png",
-  "/public/albums/Alcest.png",
-  "/public/albums/Altesia.png",
-  "/public/albums/AmonAmarth.png",
-  "/public/albums/Amorphis.png",
-  "/public/albums/AnAbstractIllusion.png",
-  "/public/albums/AncientBards.png",
-  "/public/albums/ancientSettlers.png",
-  "/public/albums/Antrisch.png",
-  "/public/albums/ApocalypseConspiracy.png",
-  "/public/albums/Apocalyptica.png",
-  "/public/albums/Apotheus.png",
-  "/public/albums/Arkona.png",
-  "/public/albums/Arkona2.png",
-  "/public/albums/At-The-Gates.png",
-  "/public/albums/Atavistia.png",
-  "/public/albums/Avantasia.png",
-  "/public/albums/Avatar.png",
-  "/public/albums/Avkrvst.png",
-  "/public/albums/Baltum.png",
-  "/public/albums/BattleBeast.png",
-  "/public/albums/Batushka.png",
-  "/public/albums/BCI.png",
-  "/public/albums/be'lakor.png",
-  "/public/albums/be'lakor2.png",
-  "/public/albums/BeyondCreation.png",
-  "/public/albums/BFMV.png",
-  "/public/albums/BlindGuardian.png",
-  "/public/albums/bmth.png",
-  "/public/albums/BTBAM.png",
-  "/public/albums/Burzum.png",
-  "/public/albums/CaboDano.png",
-  "/public/albums/Caligula'sHorse.png",
-  "/public/albums/BreakingBenjamin.png",
-  "/public/albums/BrothersOfMetal.png",
-  "/public/albums/Brymir.png",
-  "/public/albums/BTBAM.png",
-  "/public/albums/ChaosDivine.png",
-  "/public/albums/Countless-Skies.png",
-  "/public/albums/Crossfaith.png",
-  "/public/albums/Cruadalach.png",
-  "/public/albums/CultOfFire.png",
-  "/public/albums/Dadaroma.png",
-  "/public/albums/Dalriada.png",
-  "/public/albums/DarkTranquility.png",
-  "/public/albums/DarkTranquility2.png",
-  "/public/albums/DeathAngel.png",
-  "/public/albums/DEG.png",
-  "/public/albums/DEG2.png",
-  "/public/albums/Delain.png",
-  "/public/albums/Destroy-destroy-destroy.png",
-  "/public/albums/DiabloSwingOrchestra.png",
-  "/public/albums/DimmuBorgir.png",
-  "/public/albums/Draconian.png",
-  "/public/albums/DragonForce.png",
-  "/public/albums/DreamTheater.png",
-  "/public/albums/Duskmourn.png",
-  "/public/albums/Eluveitie.png",
-  "/public/albums/Eluveitie2.png",
-  "/public/albums/Ensiferum.png",
-  "/public/albums/Epica.png",
-  "/public/albums/Epica2.png",
-  "/public/albums/EscapeTheFate.png",
-  "/public/albums/eternalStorm.png",
-  "/public/albums/FallenAtDawn.png",
-  "/public/albums/feuerchwanz.png",
-  "/public/albums/Finntroll.png",
-  "/public/albums/FleshGodApocalypse.png",
-  "/public/albums/Fractal-Gates.png",
-  "/public/albums/FrozenCrown.png",
-  "/public/albums/Gaerea.png",
-  "/public/albums/Galneryus.png",
-  "/public/albums/Gaupa.png",
-  "/public/albums/godiva.png",
-  "/public/albums/Gojira.png",
-  "/public/albums/Grai.png",
-  "/public/albums/grima.png",
-  "/public/albums/grima2.png",
-  "/public/albums/Haken.png",
-  "/public/albums/hammerhedd.png",
-  "/public/albums/Harakiri.png",
-  "/public/albums/Heidevolk.png",
-  "/public/albums/HillsHaveEyes.png",
-  "/public/albums/Horus.png",
-  "/public/albums/HumanityLastBreath.png",
-  "/public/albums/Hypno5e.png",
-  "/public/albums/Igorr.png",
-  "/public/albums/Ihsahn.png",
-  "/public/albums/ImperialTriumphant.png",
-  "/public/albums/Inanna.png",
-  "/public/albums/InMourning.png",
-  "/public/albums/Insomnium.png",
-  "/public/albums/iotunn.png",
-  "/public/albums/iotunn2.png",
-  "/public/albums/IronMaiden.png",
+  "/albums/5fdp.png",
+  "/albums/A7x.png",
+  "/albums/Aephanemer.png",
+  "/albums/Aethernan.png",
+  "/albums/AetherRealm.png",
+  "/albums/After-Forever.png",
+  "/albums/Agalloch.png",
+  "/albums/Alestorm.png",
+  "/albums/AlienWeaponry.png",
+  "/albums/Allamedah.png",
+  "/albums/Alcest.png",
+  "/albums/Altesia.png",
+  "/albums/AmonAmarth.png",
+  "/albums/Amorphis.png",
+  "/albums/AnAbstractIllusion.png",
+  "/albums/AncientBards.png",
+  "/albums/ancientSettlers.png",
+  "/albums/Antrisch.png",
+  "/albums/ApocalypseConspiracy.png",
+  "/albums/Apocalyptica.png",
+  "/albums/Apotheus.png",
+  "/albums/Arkona.png",
+  "/albums/Arkona2.png",
+  "/albums/At-The-Gates.png",
+  "/albums/Atavistia.png",
+  "/albums/Avantasia.png",
+  "/albums/Avatar.png",
+  "/albums/Avkrvst.png",
+  "/albums/Baltum.png",
+  "/albums/BattleBeast.png",
+  "/albums/Batushka.png",
+  "/albums/BCI.png",
+  "/albums/be'lakor.png",
+  "/albums/be'lakor2.png",
+  "/albums/BeyondCreation.png",
+  "/albums/BFMV.png",
+  "/albums/BlindGuardian.png",
+  "/albums/bmth.png",
+  "/albums/BTBAM.png",
+  "/albums/Burzum.png",
+  "/albums/CaboDano.png",
+  "/albums/Caligula'sHorse.png",
+  "/albums/BreakingBenjamin.png",
+  "/albums/BrothersOfMetal.png",
+  "/albums/Brymir.png",
+  "/albums/BTBAM.png",
+  "/albums/ChaosDivine.png",
+  "/albums/Countless-Skies.png",
+  "/albums/Crossfaith.png",
+  "/albums/Cruadalach.png",
+  "/albums/CultOfFire.png",
+  "/albums/Dadaroma.png",
+  "/albums/Dalriada.png",
+  "/albums/DarkTranquility.png",
+  "/albums/DarkTranquility2.png",
+  "/albums/DeathAngel.png",
+  "/albums/DEG.png",
+  "/albums/DEG2.png",
+  "/albums/Delain.png",
+  "/albums/Destroy-destroy-destroy.png",
+  "/albums/DiabloSwingOrchestra.png",
+  "/albums/DimmuBorgir.png",
+  "/albums/Draconian.png",
+  "/albums/DragonForce.png",
+  "/albums/DreamTheater.png",
+  "/albums/Duskmourn.png",
+  "/albums/Eluveitie.png",
+  "/albums/Eluveitie2.png",
+  "/albums/Ensiferum.png",
+  "/albums/Epica.png",
+  "/albums/Epica2.png",
+  "/albums/EscapeTheFate.png",
+  "/albums/eternalStorm.png",
+  "/albums/FallenAtDawn.png",
+  "/albums/feuerchwanz.png",
+  "/albums/Finntroll.png",
+  "/albums/FleshGodApocalypse.png",
+  "/albums/Fractal-Gates.png",
+  "/albums/FrozenCrown.png",
+  "/albums/Gaerea.png",
+  "/albums/Galneryus.png",
+  "/albums/Gaupa.png",
+  "/albums/godiva.png",
+  "/albums/Gojira.png",
+  "/albums/Grai.png",
+  "/albums/grima.png",
+  "/albums/grima2.png",
+  "/albums/Haken.png",
+  "/albums/hammerhedd.png",
+  "/albums/Harakiri.png",
+  "/albums/Heidevolk.png",
+  "/albums/HillsHaveEyes.png",
+  "/albums/Horus.png",
+  "/albums/HumanityLastBreath.png",
+  "/albums/Hypno5e.png",
+  "/albums/Igorr.png",
+  "/albums/Ihsahn.png",
+  "/albums/ImperialTriumphant.png",
+  "/albums/Inanna.png",
+  "/albums/InMourning.png",
+  "/albums/Insomnium.png",
+  "/albums/iotunn.png",
+  "/albums/iotunn2.png",
+  "/albums/IronMaiden.png",
   "/public/albums/Jinjer.png",
-  "/public/albums/Kalmah.png",
-  "/public/albums/Kamelot.png",
-  "/public/albums/kanonenfieber.png",
-  "/public/albums/Kataklysm.png",
-  "/public/albums/Killswitch-Engage.png",
-  "/public/albums/Killus.png",
-  "/public/albums/Korpiklaani.png",
-  "/public/albums/Kvelertak.png",
-  "/public/albums/LambOfGod.png",
-  "/public/albums/Leprous.png",
-  "/public/albums/Lorenguard.png",
-  "/public/albums/LunasCall.png",
-  "/public/albums/MachineHead.png",
-  "/public/albums/MajesticVanguard.png",
-  "/public/albums/MajestyOfRevival.png",
-  "/public/albums/Masterplan.png",
-  "/public/albums/Mastodon.png",
-  "/public/albums/Mayan.png",
-  "/public/albums/Meshuggah.png",
-  "/public/albums/mgla.png",
-  "/public/albums/MissLava.png",
-  "/public/albums/Moonshade.png",
-  "/public/albums/Moonspell.png",
-  "/public/albums/MorsPrincipiumEst.png",
-  "/public/albums/MTAT.png",
-  "/public/albums/Myrath.png",
-  "/public/albums/myrukur.png",
-  "/public/albums/NailedToObscurity.png",
-  "/public/albums/NeOb.png",
-  "/public/albums/neob2.png",
-  "/public/albums/Nevermore.png",
-  "/public/albums/nightmare.png",
-  "/public/albums/Nightwish.png",
-  "/public/albums/ningenIsu.png",
-  "/public/albums/NothingsCarvedinStone.png",
-  "/public/albums/Oceans-of-Slumber.png",
-  "/public/albums/OceansAteAlaska.png",
-  "/public/albums/Opeth.png",
-  "/public/albums/Opeth2.png",
-  "/public/albums/OrbitCulture.png",
-  "/public/albums/OrdenOgan.png",
-  "/public/albums/orphanedLand.png",
-  "/public/albums/Pantera.png",
-  "/public/albums/Persefone.png",
-  "/public/albums/Powerwolf.png",
-  "/public/albums/Queensryche.png",
-  "/public/albums/Rhapsody.png",
-  "/public/albums/RhapsodyOfFire.png",
-  "/public/albums/Rishloo.png",
-  "/public/albums/Riverside.png",
-  "/public/albums/Sabaton.png",
-  "/public/albums/Septicflesh.png",
-  "/public/albums/SeventhAvenue.png",
-  "/public/albums/Shylmagogar.png",
-  "/public/albums/Sigh.png",
-  "/public/albums/SleepToken.png",
-  "/public/albums/Slipknot.png",
-  "/public/albums/Soad.png",
-  "/public/albums/Soen.png",
-  "/public/albums/Soilwork.png",
-  "/public/albums/sowilo.png",
-  "/public/albums/StoneSour.png",
-  "/public/albums/SubwayToSally.png",
-  "/public/albums/Suidarka.png",
-  "/public/albums/Svartsot.png",
-  "/public/albums/swallow.png",
-  "/public/albums/Sylosis.png",
-  "/public/albums/sylvaine.png",
-  "/public/albums/SymphonyX.png",
-  "/public/albums/TesseracT.png",
-  "/public/albums/Textures.png",
-  "/public/albums/TheVoynichCode.png",
-  "/public/albums/threeDaysgrace.png",
-  "/public/albums/tool.png",
-  "/public/albums/Triosphere.png",
-  "/public/albums/Trivium.png",
-  "/public/albums/Tryptykon.png",
-  "/public/albums/Tyr.png",
-  "/public/albums/Verikalpa.png",
-  "/public/albums/Viza.png",
-  "/public/albums/vola.png",
-  "/public/albums/Vulkan.png",
-  "/public/albums/Wardruna.png",
-  "/public/albums/Whispered.png",
-  "/public/albums/WhiteChapel.png",
-  "/public/albums/wilderun.png",
-  "/public/albums/WindRose.png",
-  "/public/albums/Wintersun.png",
-  "/public/albums/WordsOfFarewell.png",
-  "/public/albums/yoko.png",
+  "/albums/Kalmah.png",
+  "/albums/Kamelot.png",
+  "/albums/kanonenfieber.png",
+  "/albums/Kataklysm.png",
+  "/albums/Killswitch-Engage.png",
+  "/albums/Killus.png",
+  "/albums/Korpiklaani.png",
+  "/albums/Kvelertak.png",
+  "/albums/LambOfGod.png",
+  "/albums/Leprous.png",
+  "/albums/Lorenguard.png",
+  "/albums/LunasCall.png",
+  "/albums/MachineHead.png",
+  "/albums/MajesticVanguard.png",
+  "/albums/MajestyOfRevival.png",
+  "/albums/Masterplan.png",
+  "/albums/Mastodon.png",
+  "/albums/Mayan.png",
+  "/albums/Meshuggah.png",
+  "/albums/mgla.png",
+  "/albums/MissLava.png",
+  "/albums/Moonshade.png",
+  "/albums/Moonspell.png",
+  "/albums/MorsPrincipiumEst.png",
+  "/albums/MTAT.png",
+  "/albums/Myrath.png",
+  "/albums/myrukur.png",
+  "/albums/NailedToObscurity.png",
+  "/albums/NeOb.png",
+  "/albums/neob2.png",
+  "/albums/Nevermore.png",
+  "/albums/nightmare.png",
+  "/albums/Nightwish.png",
+  "/albums/ningenIsu.png",
+  "/albums/NothingsCarvedinStone.png",
+  "/albums/Oceans-of-Slumber.png",
+  "/albums/OceansAteAlaska.png",
+  "/albums/Opeth.png",
+  "/albums/Opeth2.png",
+  "/albums/OrbitCulture.png",
+  "/albums/OrdenOgan.png",
+  "/albums/orphanedLand.png",
+  "/albums/Pantera.png",
+  "/albums/Persefone.png",
+  "/albums/Powerwolf.png",
+  "/albums/Queensryche.png",
+  "/albums/Rhapsody.png",
+  "/albums/RhapsodyOfFire.png",
+  "/albums/Rishloo.png",
+  "/albums/Riverside.png",
+  "/albums/Sabaton.png",
+  "/albums/Septicflesh.png",
+  "/albums/SeventhAvenue.png",
+  "/albums/Shylmagogar.png",
+  "/albums/Sigh.png",
+  "/albums/SleepToken.png",
+  "/albums/Slipknot.png",
+  "/albums/Soad.png",
+  "/albums/Soen.png",
+  "/albums/Soilwork.png",
+  "/albums/sowilo.png",
+  "/albums/StoneSour.png",
+  "/albums/SubwayToSally.png",
+  "/albums/Suidarka.png",
+  "/albums/Svartsot.png",
+  "/albums/swallow.png",
+  "/albums/Sylosis.png",
+  "/albums/sylvaine.png",
+  "/albums/SymphonyX.png",
+  "/albums/TesseracT.png",
+  "/albums/Textures.png",
+  "/albums/TheVoynichCode.png",
+  "/albums/threeDaysgrace.png",
+  "/albums/tool.png",
+  "/albums/Triosphere.png",
+  "/albums/Trivium.png",
+  "/albums/Tryptykon.png",
+  "/albums/Tyr.png",
+  "/albums/Verikalpa.png",
+  "/albums/Viza.png",
+  "/albums/vola.png",
+  "/albums/Vulkan.png",
+  "/albums/Wardruna.png",
+  "/albums/Whispered.png",
+  "/albums/WhiteChapel.png",
+  "/albums/wilderun.png",
+  "/albums/WindRose.png",
+  "/albums/Wintersun.png",
+  "/albums/WordsOfFarewell.png",
+  "/albums/yoko.png",
 
 ];
 
@@ -226,20 +226,20 @@ function getSweepPath() {
 
   switch (side) {
     case 0: // left → right
-      start = { top: `${Math.random() * vh}px`, left: `-150px` };
-      end = { top: `${Math.random() * vh}px`, left: `${vw + 150}px` };
+      start = { top: `${Math.random() * vh}px`, left: `-200px` };
+      end = { top: `${Math.random() * vh}px`, left: `${vw + 200}px` };
       break;
     case 1: // right → left
-      start = { top: `${Math.random() * vh}px`, left: `${vw + 150}px` };
-      end = { top: `${Math.random() * vh}px`, left: `-150px` };
+      start = { top: `${Math.random() * vh}px`, left: `${vw + 200}px` };
+      end = { top: `${Math.random() * vh}px`, left: `-200px` };
       break;
     case 2: // top → bottom
-      start = { top: `-150px`, left: `${Math.random() * vw}px` };
-      end = { top: `${vh + 150}px`, left: `${Math.random() * vw}px` };
+      start = { top: `-200px`, left: `${Math.random() * vw}px` };
+      end = { top: `${vh + 200}px`, left: `${Math.random() * vw}px` };
       break;
     case 3: // bottom → top
-      start = { top: `${vh + 150}px`, left: `${Math.random() * vw}px` };
-      end = { top: `-150px`, left: `${Math.random() * vw}px` };
+      start = { top: `${vh + 200}px`, left: `${Math.random() * vw}px` };
+      end = { top: `-200px`, left: `${Math.random() * vw}px` };
       break;
     default:
       start = end = { top: `50%`, left: `50%` };
@@ -252,42 +252,55 @@ function getSweepPath() {
   };
 }
 
-function getRandomPositionPair() {
-  const vw = window.innerWidth;
-  const vh = window.innerHeight;
+// function getRandomPositionPair() {
+//   const vw = window.innerWidth;
+//   const vh = window.innerHeight;
 
-  const start = {
-    top: Math.random() * vh,
-    left: Math.random() * vw
-  };
-  const end = {
-    top: Math.random() * vh,
-    left: Math.random() * vw
-  };
+//   const start = {
+//     top: Math.random() * vh,
+//     left: Math.random() * vw
+//   };
+//   const end = {
+//     top: Math.random() * vh,
+//     left: Math.random() * vw
+//   };
 
-  return {
-    startCSS: { top: `${start.top}px`, left: `${start.left}px` },
-    x: `${end.left - start.left}px`,
-    y: `${end.top - start.top}px`
-  };
-}
-function getRandomEndPosition() {
-  return {
-    top: `${Math.random() * 100}%`,
-    left: `${Math.random() * 100}%`
-  };
+//   return {
+//     startCSS: { top: `${start.top}px`, left: `${start.left}px` },
+//     x: `${end.left - start.left}px`,
+//     y: `${end.top - start.top}px`
+//   };
+// }
+// function getRandomEndPosition() {
+//   return {
+//     top: `${Math.random() * 100}%`,
+//     left: `${Math.random() * 100}%`
+//   };
+// }
+function getRandomTilt() {
+  const tilt = Math.random() * 8 - 4; // -4 to +4 degrees
+  return `${tilt}deg`;
 }
 function getRandomSize() {
-  const size = 70 + Math.random() * 100;
-  return `${size}px`;
+  return "200px";
 }
 function getRandomDuration() {
-  return "8s";
+  const min = 12;
+  const max = 20;
+  return `${Math.random() * (max - min) + min}s`;
 }
 function getRandomDelay() {
   return `${Math.random() * 30}s`;
 }
+function shuffle(array) {
+  return array
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+}
 
+let shuffledAlbums = shuffle(albumImages);
+let currentIndex = 0;
 function AlbumBackground() {
   const [floatingAlbums, setFloatingAlbums] = useState([]);
 
@@ -296,30 +309,42 @@ function AlbumBackground() {
     let index = 0;
 
     function spawnAlbum() {
-      const src = albumImages[index % albumImages.length];
-      // const start = getRandomStartPosition();
-      // const end = getRandomEndPosition();
-      const pos = getSweepPath();
+      const src = shuffledAlbums[currentIndex];
+      currentIndex = (currentIndex + 1) % shuffledAlbums.length;
+      // Reshuffle if we've looped through everything
+      if (currentIndex === 0) {
+        shuffledAlbums = shuffle(albumImages);
+      }
 
+      const pos = getSweepPath();
+      const duration = getRandomDuration();
+      const delay = getRandomDelay();
       const newAlbum = {
         id: Date.now() + Math.random(),
         src,
         pos, // contains startCSS, x, y
 
         size: getRandomSize(),
-        duration: getRandomDuration(),
-        delay: getRandomDelay(),
+        duration: duration,
+        delay: delay,
+        tilt: getRandomTilt(),
       };
 
       setFloatingAlbums((prev) => {
         const next = [...prev, newAlbum];
-        return next.length > visibleCount ? next.slice(1) : next;
+        // Keep only the last 10
+        return next.length > 10 ? next.slice(next.length - 10) : next;
       });
+
+      const totalLifetime = parseFloat(duration) * 1000 + parseFloat(delay) * 1000;
+      setTimeout(() => {
+        setFloatingAlbums((prev) => prev.filter((a) => a.id !== newAlbum.id));
+      }, totalLifetime);
 
       index++;
     }
 
-    const interval = setInterval(spawnAlbum, 1000); // spawn every 1s
+    const interval = setInterval(spawnAlbum, 7000); // spawn every 7s
     return () => clearInterval(interval);
   }, []);
   return (
@@ -335,6 +360,8 @@ function AlbumBackground() {
             width: album.size,
             animation: `drift ${album.duration} linear`,
             animationDelay: album.delay,
+            "--tilt": album.tilt,
+            transform: `rotate(${album.tilt})`,
             '--x': album.pos.x,
             '--y': album.pos.y
           }}
