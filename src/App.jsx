@@ -109,7 +109,7 @@ const albumImages = [
   "/albums/iotunn.png",
   "/albums/iotunn2.png",
   "/albums/IronMaiden.png",
-  "/public/albums/Jinjer.png",
+  "/albums/Jinjer.png",
   "/albums/Kalmah.png",
   "/albums/Kamelot.png",
   "/albums/kanonenfieber.png",
