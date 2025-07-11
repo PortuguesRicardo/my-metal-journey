@@ -38,7 +38,7 @@ const albumImages = [
   "/albums/Batushka.png",
   "/albums/BCI.png",
   "/albums/be'lakor.png",
-  "/albums/be'lakor2.png",
+  "/albums/Be'lakor2.png",
   "/albums/BeyondCreation.png",
   "/albums/BFMV.png",
   "/albums/BlindGuardian.png",
